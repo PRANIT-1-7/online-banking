@@ -1,7 +1,11 @@
-
+import { useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
 function Transfer() {
-  return <h1>Login Page</h1>;
+  return (
+    <div>
+      <h1>transaction</h1>
+    </div>
+  );
 }
-
 
 export default Transfer;
