@@ -5,7 +5,7 @@ import "./Login.css";
 function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-
+  const em = /^[^\s@]+@[^\s]+.[^\s@]$/;
   const navigate = useNavigate();
   const [error, setError] = useState("");
   const handleLogin = () => {
@@ -14,6 +14,11 @@ function Login() {
 
       return;
     }
+    if (!em.test(email)) {
+      setError("enter vaild email");
+      return;
+    }
+
     setError("");
     navigate("/dashboard");
   };
@@ -30,7 +35,10 @@ function Login() {
             type="email"
             placeholder="Enter email"
             value={email}
-            onChange={(e) => setEmail(e.target.value)}
+            onChange={(e) => {
+              setEmail(e.target.value);
+              setError("");
+            }}
           />
         </div>
 
@@ -41,7 +49,10 @@ function Login() {
             type="password"
             placeholder="Enter password"
             value={password}
-            onChange={(e) => setPassword(e.target.value)}
+            onChange={(e) => {
+              setPassword(e.target.value);
+              setError("");
+            }}
           />
         </div>
 

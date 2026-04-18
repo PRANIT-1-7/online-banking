@@ -4,13 +4,13 @@
 body {
   background-color: #f0f2f5;
 }
-.login-container {
+.register-container {
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.login-form button {
+.register-form button {
   background-color: #4caf50;
   border: none;
   border-radius: 5px;
@@ -19,12 +19,13 @@ body {
   padding: 10px;
   color: white;
   cursor: pointer;
+  margin-top: 10px;
 }
 
-.login-form button:hover {
+.register-form button:hover {
   background-color: #45a049;
 }
-.login-form input {
+.register-form input {
   color: #555;
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -33,7 +34,7 @@ body {
   margin-top: 8px;
 }
 
-.login-form {
+.register-form {
   border: 1px solid #ccc;
   border-radius: 5px;
   padding: 20px;
@@ -42,29 +43,29 @@ body {
   width: 300px;
 }
 
-.login-form h1 {
+.register-form h1 {
   text-align: center;
   margin-bottom: 15px;
   font-weight: 600;
 }
 
-.login-form div {
+.register-form div {
   margin-bottom: 12px;
 }
-.login-form label {
+.register-form label {
   color: #333;
   font-size: 14px;
 }
-.login-error {
+.register-error {
   color: red;
 
   text-align: center;
 }
-.login-form a {
+.register-form a {
   color: #4caf50;
   text-decoration: none;
 }
 
-.login-form a:hover {
+.register-form a:hover {
   text-decoration: underline;
 }
