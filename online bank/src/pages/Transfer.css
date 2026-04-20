@@ -1,0 +1,54 @@
+* {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+body {
+  background-color: #f0f2f5;
+}
+.transfer-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.transfer-main {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.transfer-main .transfer-button {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+}
+.transfer-main button {
+  background-color: #4caf50;
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
+  width: 100%;
+  padding: 10px;
+  color: white;
+  cursor: pointer;
+  margin: 10px;
+}
+
+.transfer-main button:hover {
+  background-color: #45a049;
+}
+
+.transfer-main h1 {
+  text-align: center;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+.transfer-main div {
+  margin-bottom: 12px;
+  margin: 10px;
+}
