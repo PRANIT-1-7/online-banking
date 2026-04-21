@@ -52,3 +52,7 @@ body {
   margin-bottom: 12px;
   margin: 10px;
 }
+.transfer-error {
+  color: red;
+  text-align: center;
+}
