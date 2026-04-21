@@ -10,6 +10,9 @@ function Dashboard() {
   const logout = () => {
     navigate("/");
   };
+  const handelHistory = () => {
+    navigate("/history");
+  };
   return (
     <div className="dashboard-container">
       <div className="dashboard-main">
@@ -20,7 +23,7 @@ function Dashboard() {
         </div>
         <div className="dashboard-button">
           <button onClick={handelDashboard}>transfer</button>
-          <button>view history</button>
+          <button onClick={handelHistory}>view history</button>
         </div>
         <button className="logout-btn" onClick={logout}>
           Logout
